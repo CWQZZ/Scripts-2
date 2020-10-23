@@ -6,9 +6,13 @@ name: youth_read
 on:
   workflow_dispatch:
   schedule:
-     - cron: '6 1-12/2 * * *'
+     - cron: '6 6-22/4 * * *'
   watch:
     types: started
+    
+env:
+  TZ: Asia/Shanghai
+    
 jobs:
   build:
     runs-on: ubuntu-latest
